@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Mahony';
+    src: url('/src/assets/fonts/Mahony.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Mahony';
+    font-size: 3rem;
+    color: black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 2rem;
+}
+.sidebar {
+    position: fixed;
+    top: 8rem;
+    right: 100%;
+    width: 100%;
+    height: 20%;
+    border-bottom: 2px solid black;
+    background-color: #f0f2f5;
+    color: white;
+    transition: right 0.3s ease;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.sidebar.open {
+    right: 0;
+}
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+ul{
+    display:flex;
+    list-style-type: none;
+    
+}
+
+li a:hover{
+    background-color: black;
+    color: white;
+}
+
+.disabled {
+    color: gray;
+    cursor: pointer;
+    opacity: 0.5;
+}
